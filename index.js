@@ -25,7 +25,7 @@ db()
 const whiteList = [
     process.env.FRONTEND_URL
 ]
-if (process.argv[2] === '--all' || true) {
+if (process.argv[2] === '--all') {
     whiteList.push(undefined) // Para recibir peticiones desde postman
 }
 const corsOptions = {
